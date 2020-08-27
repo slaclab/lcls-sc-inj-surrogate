@@ -1,65 +1,7 @@
-﻿MAD Name,Type,EPICS Name,Comment
-C1-1,CAMR,CAMR:LR20:100,Telescope camera (Coherent 1)
-C1-2,CAMR,CAMR:LR20:90,Telescope camera (Coherent 2)
-C-IRIS,CAMR,CAMR:LR20:135,Drive laser iris camera (common)
-VCC,CAMR,CAMR:IN20:186,Virtual cathode (common)
-CH5-1,CAMR,CAMR:LR20:285,Heater transport camera 5 (Coherent 1)
-CH5-2,CAMR,CAMR:LR20:295,Heater transport camera 5 (Coherent 2)
-CH4-1,CAMR,CAMR:LR20:287,Heater transport camera 4 (Coherent 1)
-CH4-2,CAMR,CAMR:LR20:297,Heater transport camera 4 (Coherent 2)
-CH3,CAMR,CAMR:LR20:320,Heater transport camera 3 (Common)
-CH2,CAMR,CAMR:IN20:423,Heater transport camera 2 (Common)
-CH1,CAMR,CAMR:IN20:461,Heater transport camera 1 (Common)
-VHC,CAMR,CAMR:IN20:469,Virtual heater camera (Common)
-SOL1BK,SOLN,SOLN:IN20:111,Bucking solenoid
-SOL1,SOLN,SOLN:IN20:121,Gun solenoid
-CQ01,QUAD,QUAD:IN20:121,Gun corrector quad
-XC00,XCOR,XCOR:IN20:121,
-SQ01,QUAD,QUAD:IN20:122,Gun skew quad
-YC00,YCOR,YCOR:IN20:122,
-YAG01,YAGS,YAGS:IN20:211,
-BPM2,BPMS,BPMS:IN20:221,
-XC01,XCOR,XCOR:IN20:221,
-YC01,YCOR,YCOR:IN20:222,
-BXG,BEND,BEND:IN20:231,"This should be OFF, otherwise beam is to gun spectrometer"
-BXGT,BTRM,BTRM:IN20:231,
-BPM3,BPMS,BPMS:IN20:235,
-YAG02,YAGS,YAGS:IN20:241,
-SOL2,SOLN,SOLN:IN20:311,Off
-XC02,XCOR,XCOR:IN20:311,
-YC02,YCOR,YCOR:IN20:312,
-XC03,XCOR,XCOR:IN20:341,
-YC03,YCOR,YCOR:IN20:342,
-YAG03,YAGS,YAGS:IN20:351,
-QA01,QUAD,QUAD:IN20:361,Used for matching solution
-BPM5,BPMS,BPMS:IN20:371,
-QA02,QUAD,QUAD:IN20:371,Used for matching solution
-XC04,XCOR,XCOR:IN20:381,
-YC04,YCOR,YCOR:IN20:382,
-XC05,XCOR,XCOR:IN20:411,
-YC05,YCOR,YCOR:IN20:412,
-BPM6,BPMS,BPMS:IN20:425,
-QE01,QUAD,QUAD:IN20:425,Used for matching solution
-QE02,QUAD,QUAD:IN20:441,Used for matching solution
-BXH1,BEND,BEND:IN20:451,
-BXH1T,BTRM,BTRM:IN20:451,
-BXH2,BEND,BEND:IN20:461,
-OTRH1,OTRS,OTRS:IN20:465,
-OTRH2,OTRS,OTRS:IN20:471,
-BXH3,BEND,BEND:IN20:475,
-BXH3T,BTRM,BTRM:IN20:475,
-BXH4,BEND,BEND:IN20:481,
-BXH4T,BTRM,BTRM:IN20:481,
-XC06,XCOR,XCOR:IN20:491,
-YC06,YCOR,YCOR:IN20:492,
-BPM8,BPMS,BPMS:IN20:511,
-QE03,QUAD,QUAD:IN20:511,Used for matching solution
-XC07,XCOR,XCOR:IN20:521,
-YC07,YCOR,YCOR:IN20:522,
-BPM9,BPMS,BPMS:IN20:525,The TMIT of this BPM will tell you if beam is on at screen/wire. Beware that the beam may flash on/off while doing a measurement.
-QE04,QUAD,QUAD:IN20:525,Used for matching solution
-WS01,WIRE,WIRE:IN20:531,
-OTR1,OTRS,OTRS:IN20:541,
-WS02,WIRE,WIRE:IN20:561,"Wire scanner 02, used for final IN20 emittance measurement"
-OTR2,OTRS,OTRS:IN20:571,"OTR2 camera, used for initial matching/emittance measurement"
-BPMDD,BPMS,BPMS:DMP1:693,"The TMIT of this BPM will tell you if beam is on all the way to the dump. That is, if quads are changing and there is beam here, likely it's empirical tuning on the FEL."
+﻿Variable,PV Name,Device Min,Device Max,Units,Astra Name,Astra Units,Distgen Name,Distgen Units,Notes
+Gun gradient,GUN:GUNB:100:AACT,0,20,MV,Proportional to MaxE,,N/A,N/A,
+Correlates to aperture size,IRIS:LGUN:600:MOTR_ANGLE,0,300,Degrees,N/A,N/A,N/A,N/A,"Can be used to look up the aperture size, for laser radius in mm."
+Gun Phase,GUN:GUNB:100:POPEN,N/A,N/A,Degree,Phi(1),Degrees,N/A,N/A,Needs to be shifted relative to setpoint
+Solenoid,SOLN:GUNB:823:BACT,-0.075,0.075,kG-m,MaxB(2),kG,N/A,N/A,
+Charge,TORO:GUNB:360:CHRG,0,N/A,pC,N/A,N/A,"""total_charge:value""",pC,
+,,,,,,,,,
