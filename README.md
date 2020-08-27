@@ -4,10 +4,10 @@ Repository for LCLS Superconducting Injector Surrogate Modeling
 This surrogate model was trained using Astra simulations from the following data types:
 
 1. Astra simulations using various laser inputs types.
-    ..* Particle distributions generated using [distgen](https://github.com/ColwynGulliford/distgen)
+    * Particle distributions generated using [distgen](https://github.com/ColwynGulliford/distgen)
 
 2. Measured data collected at SLAC in October and November 2019
-    ..* Image processing scripts which replicate the procedure applied to the measured data, before training, are included.
+    * Image processing scripts which replicate the procedure applied to the measured data, before training, are included.
 
 ## Navigating this repository
 
