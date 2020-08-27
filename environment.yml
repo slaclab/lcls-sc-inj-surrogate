@@ -1,0 +1,10 @@
+name: lcls-sc-inj-surrogate
+dependencies:
+  - python=3.7
+  - bokeh::jupyter_bokeh
+  - jrgarrahan::lume-epics==0.3
+  - jrgarrahan::lume-model==0.2
+  - pip
+  - pip:
+    - tensorflow-cpu
+    - jupyter-server-proxy
