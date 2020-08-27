@@ -6,4 +6,5 @@ def load_jupyter_server_extension(nbapp):
     env = os.environ.copy()
     env["EPICS_CA_ADDR_LIST"]="0.0.0.0"
     env["EPICS_PVA_ADDR_LIST"]="0.0.0.0"
+    env["PYTHONPATH"]=os.getcwd()
     Popen(["bokeh", "serve", "binder/surrogate_model_client.py", "--allow-websocket-origin=*"], env=env)
