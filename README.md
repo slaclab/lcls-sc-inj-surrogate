@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jacquelinegarrahan/lcls-sc-inj-surrogate/master?urlpath=/proxy/5006/surrogate_model_client)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jacquelinegarrahan/lcls-sc-inj-surrogate/binder?urlpath=/proxy/5006/surrogate_model_client)
 
 # lcls_sc_inj_surrogate
 Repository for LCLS Superconducting Injector Surrogate Modeling
