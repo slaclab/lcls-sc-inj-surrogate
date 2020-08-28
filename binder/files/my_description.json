@@ -1,0 +1,189 @@
+{
+    "name": "testing",
+    "description": "testinggggg",
+    "input_variables": {
+        "maxb(2)": {
+            "variable_type": "scalar",
+            "units": "kG",
+            "default": 0.1,
+            "range": [
+                0.0000027,
+                0.0999992
+            ]
+        },
+        "phi(1)": {
+            "variable_type": "scalar",
+            "units": "Deg",
+            "default": 0,
+            "range": [
+                -9.9998479,
+                9.9998162
+            ]
+        },
+        "total_charge:value": {
+            "variable_type": "scalar",
+            "units": "PicoCoul",
+            "default": 0,
+            "range": [
+                0.0041992,
+                299.9905896
+            ]
+        },
+        "in_xmin": {
+            "variable_type": "scalar",
+            "units": "mm",
+            "default": 75,
+            "range": [
+                -1,
+                1
+            ],
+            "parent_variable": "input_image"
+        },
+        "in_xmax": {
+            "variable_type": "scalar",
+            "units": "mm",
+            "default": -1,
+            "range": [
+                -1,
+                1
+            ],
+            "parent_variable": "input_image"
+        },
+        "in_ymin": {
+            "variable_type": "scalar",
+            "units": "mm",
+            "default": 1,
+            "range": [
+                -1,
+                1
+            ],
+            "parent_variable": "input_image"
+        },
+        "in_ymax": {
+            "variable_type": "scalar",
+            "units": "mm",
+            "default": -1,
+            "range": [
+                -1,
+                1
+            ],
+            "parent_variable": "input_image"
+        },
+        "input_image": {
+            "variable_type": "image",
+            "axis_labels": [
+                "x",
+                "y"
+            ],
+            "range": [
+                0,
+                10
+            ],
+            "x_min_variable": "in_xmin",
+            "x_max_variable": "in_xmax",
+            "y_min_variable": "in_ymin",
+            "y_max_variable": "in_ymax"
+        }
+    },
+    "output_variables": {
+        "end_core_emit_95percent_x": {
+            "variable_type": "scalar",
+            "units": "meter-radians"
+        },
+        "end_core_emit_95percent_y": {
+            "variable_type": "scalar",
+            "units": "meter-radians"
+        },
+        "end_core_emit_95percent_z": {
+            "variable_type": "scalar",
+            "units": "meter-radians"
+        },
+        "end_mean_kinetic_energy": {
+            "variable_type": "scalar",
+            "units": "Electron-volts (eV)"
+        },
+        "end_mean_x": {
+            "variable_type": "scalar",
+            "units": "meters"
+        },
+        "end_mean_y": {
+            "variable_type": "scalar",
+            "units": "meters"
+        },
+        "end_n_particle_loss": {
+            "variable_type": "scalar",
+            "units": "Number"
+        },
+        "end_norm_emit_x": {
+            "variable_type": "scalar",
+            "units": "meter-radians"
+        },
+        "end_norm_emit_y": {
+            "variable_type": "scalar",
+            "units": "meter-radians"
+        },
+        "end_norm_emit_z": {
+            "variable_type": "scalar",
+            "units": "meter-radians"
+        },
+        "end_sigma_x": {
+            "variable_type": "scalar",
+            "units": "meters"
+        },
+        "end_sigma_xp": {
+            "variable_type": "scalar",
+            "units": "radians"
+        },
+        "end_sigma_y": {
+            "variable_type": "scalar",
+            "units": "meters"
+        },
+        "end_sigma_yp": {
+            "variable_type": "scalar",
+            "units": "radians"
+        },
+        "end_sigma_z": {
+            "variable_type": "scalar",
+            "units": "meters"
+        },
+        "end_total_charge": {
+            "variable_type": "scalar",
+            "units": "Coulombs (C)"
+        },
+        "out_xmin": {
+            "variable_type": "scalar",
+            "units": "Meters (m)",
+            "parent_variable": "x:y"
+        },
+        "out_xmax": {
+            "variable_type": "scalar",
+            "units": "Meters (m)",
+            "parent_variable": "x:y"
+        },
+        "out_ymin": {
+            "variable_type": "scalar",
+            "units": "Meters (m)",
+            "parent_variable": "x:y"
+        },
+        "out_ymax": {
+            "variable_type": "scalar",
+            "units": "Meters (m)",
+            "parent_variable": "x:y"
+        },
+        "x:y": {
+            "variable_type": "image",
+            "axis_units": [
+                "mm",
+                "mm"
+            ],
+            "axis_labels": [
+                "x",
+                "y"
+            ],
+            "x_min_variable": "out_xmin",
+            "x_max_variable": "out_xmax",
+            "y_min_variable": "out_ymin",
+            "y_max_variable": "out_ymax"
+        }
+    }
+}
