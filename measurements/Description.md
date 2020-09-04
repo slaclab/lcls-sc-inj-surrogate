@@ -19,3 +19,10 @@ In order to pull the image and PV data, the following information is needed:
 2. Time interval for desired data.
 
 Using [LCLS-Tools](https://github.com/slaclab/lcls-tools), using the database building scripts, the desired data is compiled into the HDF5 files for processing.
+
+### Measured Data Processing
+
+Notebooks for processing the measured data are made available. Data from each month was processes separately and combined to create datasets for surrogate model training/updating. 
+
+The processed data is available as well. 
+
