@@ -1,29 +1,30 @@
-n_particle: 200000
+n_particle: 10000
 output:
-  file: SG.beer.can.out.txt
+  file: rad.gaussian.out.txt
   type: gpt
 r_dist:
-  alpha:
-    units: ''
-    value: 0.10420067666727761
   sigma_xy:
     units: mm
-    value: 1
+    value: 0.16279143585177527
+  alpha:
+    units: ''
+    value: 0.149
   type: rsg
 random_type: hammersley
 start:
   MTE:
     units: meV
-    value: 150
+    value: 250
   type: cathode
 t_dist:
-  alpha:
-    units: ''
-    value: 0.5
+  avg_t:
+    units: ps
+    value: 0
+  n_sigma_cutoff: 3
   sigma_t:
     units: ps
-    value: 8.0
-  type: sg
+    value: 8.5
+  type: gaussian
 total_charge:
   units: pC
-  value: 100
+  value: 10
