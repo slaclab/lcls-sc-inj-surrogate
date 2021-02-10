@@ -8,22 +8,19 @@ r_dist:
     value: 0.07251420143315826
   sigma_xy:
     units: mm
-    value: .25
+    value: .175
   type: rsg
 random_type: hammersley
 start:
   MTE:
     units: meV
-    value: 150
+    value: 330
   type: cathode
 t_dist:
-  alpha:
-    units: ''
-    value: 0.5
   sigma_t:
     units: ps
-    value: 8.0
-  type: sg
+    value: 8.5
+  type: gaussian
 total_charge:
   units: pC
   value: 100
