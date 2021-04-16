@@ -19,4 +19,4 @@ This surrogate model was trained using Astra simulations from the following data
 
 ### Support
 
-For further information, please contact [Lipi Gupta](lipigupta@uchicago.edu) or [Chris Mayes](cmayes@stanford.edu) for more information.
+For further information, please contact [Lipi Gupta](lipigupta@uchicago.edu) or [Christopher Mayes](https://github.com/ChristopherMayes) for more information.
